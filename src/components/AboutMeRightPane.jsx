@@ -62,7 +62,7 @@ export default function AboutMeRightPane(){
 
                 <p className="mt-4 flex flex-row justify-between items-baseline">
                     <span className="font-semibold text-sm sm:text-lg">Kristu Jayanti College, Bengaluru</span>
-                    <span className="font-medium text-xs sm:text-base text-white/70 text-right whitespace-nowrap">2024-2027</span>
+                    <span className="font-medium text-xs sm:text-base text-white/70 text-right whitespace-nowrap">2021-2024</span>
                 </p>
                 <p className="flex flex-row justify-between items-baseline -mt-1">
                     <span className="font-medium text-sm sm:text-base">Bachelors in Computer Applications</span>
@@ -73,7 +73,7 @@ export default function AboutMeRightPane(){
             <motion.div className="flex flex-col border-b p-4 border-white/20" whileInView={{opacity:100,x:0,y:0}} initial={{opacity:0,x:30,y:30}} transition={{duration:0.6}}>
                 {/* Adjusted Heading */}
                 <h3 className="font-semibold text-lg sm:text-2xl">Experience</h3>
-                <p className="mt-2 font-medium flex flex-row justify-between"><span>Online Tutor - Instant International</span><span className="text-right text-white/70">2022-2024</span></p>
+                <p className="mt-2 font-medium flex flex-row justify-between"><span>Online Tutor - Instant International</span><span className="font-medium text-xs sm:text-base text-white/70 text-right whitespace-nowrap">2022-2024</span></p>
                 <p className="flex justify-between "><span>Filo Ed Tech</span></p>
                 <ul className="mt-2 flex flex-col space-y-4" >
                     <li className="border-l-2 border-white px-4">Conducted over 1000 instant sessions clearing doubts of students from the US and UK in computer science and mathematics.</li>

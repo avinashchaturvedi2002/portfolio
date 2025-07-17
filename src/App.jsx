@@ -45,7 +45,7 @@ export default function App() {
     </div>
     <div className="button-box space-y-6 sm:space-x-6 sm:space-y-0 mt-6 flex items-center justify-center flex-col sm:flex-row w-auto">
       <button onClick={()=>{window.open("https://www.linkedin.com/in/avinash-chaturvedi/","_blank")}} className="px-8 py-2  rounded-3xl border border-white w-52 flex flex-row items-center justify-around transition ease-in-out hover:scale-110 group"><span className="group-hover:animate-wave">👋</span> Let's connect</button>
-      <button onClick={()=>{window.open("https://drive.google.com/file/d/1hSB87dOJycHtE42P14jmqRS27Xl3vu5N/view?usp=sharing","_blank")}} className="px-8 py-2 rounded-3xl border border-white w-52 flex flex-row items-center justify-around transition ease-in-out hover:scale-110 group">My Resume <FaArrowDown className="mt-1 group-hover:animate-bounce"/></button>
+      <button onClick={()=>{window.open("https://drive.google.com/file/d/1bbiGBw_SIbu5kUjfejiN7sZx7vwnVjfl/view?usp=sharing","_blank")}} className="px-8 py-2 rounded-3xl border border-white w-52 flex flex-row items-center justify-around transition ease-in-out hover:scale-110 group">My Resume <FaArrowDown className="mt-1 group-hover:animate-bounce"/></button>
     </div>
     </main>
     <section id="about" className="w-screen mt-52 flex flex-col items-center justify-center ">
