@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Base styles for HTML, Body, Root */
 html,
 body,
 #root {
@@ -11,7 +11,62 @@ body,
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  /* Ensure root div can scroll vertically if content overflows */
+  overflow-y: auto;
 }
 
+/* --- */
 
+/* Place all your custom scrollbar CSS inside a @layer directive */
+@layer base {
+  /* GLOBAL DEEPER SPACE-THEMED SCROLLBAR */
+  ::-webkit-scrollbar {
+    width: 8px; /* Slightly wider for better visibility */
+    height: 8px;
+  }
 
+  ::-webkit-scrollbar-track {
+    background: rgba(5, 5, 10, 0.9); /* Very dark, almost black blue/indigo, slightly more opaque */
+    border-radius: 4px; /* Slightly rounded track edges */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(173, 216, 230, 0.2); /* Very faint ethereal light blue, highly transparent */
+    border-radius: 6px; /* More rounded thumb for a softer look */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(173, 216, 230, 0.5); /* Brighter light blue on hover, like a star gaining prominence */
+  }
+
+  /* Firefox compatibility */
+  * {
+    scrollbar-width: thin; /* 'auto' or 'thin' */
+    scrollbar-color: rgba(173, 216, 230, 0.2) rgba(5, 5, 10, 0.9); /* thumb color track color */
+  }
+
+  /* --- */
+
+  /* Optional: class-specific version for targeted elements */
+  /* If you want to use this, apply class="dark-space-scroll" to your div */
+  .dark-space-scroll::-webkit-scrollbar {
+    width: 8px;
+  }
+  .dark-space-scroll::-webkit-scrollbar-track {
+    background: rgba(5, 5, 10, 0.9);
+    border-radius: 4px;
+  }
+  .dark-space-scroll::-webkit-scrollbar-thumb {
+    background-color: rgba(173, 216, 230, 0.2);
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+  .dark-space-scroll::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(173, 216, 230, 0.5);
+  }
+  .dark-space-scroll { /* Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(173, 216, 230, 0.2) rgba(5, 5, 10, 0.9);
+  }
+}
