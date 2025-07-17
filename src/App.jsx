@@ -63,7 +63,7 @@ export default function App() {
   <MiniProjects/>
 
 </section>
-<section id="contact" className="w-screen  mt-44 flex flex-col items-center justify-center">
+<section id="contact" className="w-screen  mt-44 flex flex-col items-center justify-center ">
     <TypingEffect text="GET IN TOUCH"/>
       <SubHeading text="Contact Me"/>
       <ContactDiv/>

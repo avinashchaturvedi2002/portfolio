@@ -62,7 +62,7 @@ const techStackManitType = [
     hover:scale-[1.01] hover:shadow-purple-500/50
     z-[30]
   `}
-  style={{ top: `8rem` }}
+  style={{ top: `0rem` }}
 >
   {/* Left text column */}
   <div className="w-full md:w-1/2 flex flex-col space-y-4">
