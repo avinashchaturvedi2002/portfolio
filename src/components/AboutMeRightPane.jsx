@@ -39,7 +39,7 @@ export default function AboutMeRightPane(){
   { name: "Cloudinary", icon: <SiCloudinary className="text-blue-300" /> },
 ];
   return (
-    <div className="sm:w-2/3 sm:px-4 mt-4">
+    <div className="sm:w-2/3 px-2 sm:px-4 mt-4">
           <motion.div className="flex flex-col border-b p-4 border-white/20" whileInView={{opacity:100,x:0,y:0}} initial={{opacity:0,x:30,y:30}} transition={{duration:0.6}}>
             <h3 className="font-semibold text-lg">Education</h3>
             <p className="mt-2 font-medium  flex  sm:flex-row justify-between"><span>Maulana Azad National Institute Of Technology, Bhopal</span><span className="text-right">2024-2027</span></p>

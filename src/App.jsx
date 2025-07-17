@@ -32,7 +32,7 @@ export default function App() {
      
 
       {/* Foreground content */}
-      <div className="relative z-10  text-white font-roboto">
+      <div className="relative z-10  text-white font-roboto py-2">
         <NavBar />
    <main id="home" className="flex flex-col justify-center items-center relative z-100 mt-32   sm:mt-44" >
 
