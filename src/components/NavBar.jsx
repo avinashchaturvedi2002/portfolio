@@ -20,7 +20,7 @@ const items = [
     } else if (item.targetId) {
       const element = document.getElementById(item.targetId);
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        element.scrollIntoView({ behavior: 'smooth',block:'start' });
       }
     }
   };
