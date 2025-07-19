@@ -9,14 +9,23 @@ import AboutMeLeftPane from "./components/AboutMeLeftPane";
 import ProjectStack from "./components/ProjectStack"
 import MiniProjects from "./components/MiniProjects";
 import ContactDiv from "./components/ContactDiv";
-
-
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { initGA, logPageView } from "./ga";
 
 
 
 export default function App() {
   
+  const location = useLocation();
 
+  useEffect(() => {
+    initGA();
+  }, []);
+
+  useEffect(() => {
+    logPageView();
+  }, [location]);
 
   return (
    <div className="roboto  relative min-h-full w-full bg-gradient-to-br from-gray-800 via-black to-gray-800">
